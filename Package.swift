@@ -30,7 +30,8 @@ let package = Package(
         .target(
             name: "SolanaSwift",
             dependencies: [
-                .product(name: "secp256k1", package: "secp256k1.swift"),
+                "secp256k1"
+                // .product(name: "secp256k1", package: "secp256k1.swift"),
                 .product(name: "TweetNacl", package: "tweetnacl-swiftwrap"),
                 .product(name: "Task_retrying", package: "task-retrying-swift"),
             ]
